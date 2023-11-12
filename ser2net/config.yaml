@@ -1,0 +1,31 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: "ser2net"
+version: "0.1.0"
+slug: ser2net
+description: "Expose a serial device to remote hosts with ser2net"
+url: "https://github.com/madmatah/hass-addons/tree/main/ser2net"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+ports:
+  38001/tcp: 38001
+map:
+  - share:rw
+options:
+  device: "/dev/ttyUSB0"
+  baudrate: "9600"
+  databits: 8DATABITS
+  parity: EVEN
+  stopbits: 1STOPBIT
+schema:
+  device: "device(subsystem=tty)"
+  baudrate: "list(300|1200|2400|4800|9600|19200|38400|57600|115200|230400|460800|500000|576000|921600|1000000|1152000|1500000|2000000|2500000|3000000|3500000|4000000)"
+  databits: "list(7DATABITS|8DATABITS)"
+  parity: "list(EVEN|ODD|NONE)"
+  stopbits: "list(1STOPBIT|2STOPBITS)"
+uart: true
+image: "ghcr.io/madmatah/hass-addon-ser2net-{arch}"

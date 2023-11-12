@@ -1,6 +1,14 @@
-# Home Assistant Add-on: Example add-on
+# Home Assistant Add-on: Ser2net
 
-_Example add-on to use as a blueprint for new add-ons._
+This add-on let you expose a serial device of your Home Assistant instance on the network.
+
+## Usage
+
+See [DOCS.md] for more information.
+
+## Supported architectures
+
+(in theory)
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
