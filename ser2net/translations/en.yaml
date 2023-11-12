@@ -1,0 +1,6 @@
+configuration:
+  device:
+    name: Device
+    description: Serial device to expose on the network
+
+  

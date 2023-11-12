@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Start the ser2net service
+# ==============================================================================
+
+bashio::log.info "Starting ser2net service"
+
+exec /usr/sbin/ser2net -n -c /etc/ser2net.conf
+
