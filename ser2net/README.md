@@ -4,7 +4,7 @@ This add-on let you expose a serial device of your Home Assistant instance on th
 
 ## Usage
 
-See [DOCS.md] for more information.
+See [DOCS.md](DOCS.md) for more information.
 
 ## Supported architectures
 
